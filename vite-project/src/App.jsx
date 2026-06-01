@@ -115,7 +115,7 @@ if(excelFile){
   formData.append("avatar", excelFile);
 }
 
-   let response = await fetch("http://localhost:3000/data", {
+   let response = await fetch("https://bulkmails.onrender.com/data", {
     method: "POST",
     body: formData
   });
