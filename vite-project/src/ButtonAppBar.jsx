@@ -11,7 +11,7 @@ let msg;
 import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
 export default function ButtonAppBar({ alertType, setAlert }) {
   function login(){
-    window.location.href = "http://localhost:3000/auth/google";
+    window.location.href = "https://bulkmails.onrender.com/auth/google";
   }
 
    // ✅ 1. Handle URL params (runs once)
