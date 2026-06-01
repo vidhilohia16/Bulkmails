@@ -32,7 +32,13 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
+import path from "path";
 
+app.use(express.static(path.join(__dirname, "vite-project/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "vite-project", "build", "index.html"));
+});
 app.use(express.json());
 app.listen(3000, () => {
   console.log('Server running')
