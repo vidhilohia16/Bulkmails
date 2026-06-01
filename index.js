@@ -87,7 +87,7 @@ app.get('/auth/google/callback', async (req, res) => {
   //   success:true,
   //   message:"sign up successful!"
   // })
-  res.redirect("https://bulkmails-five.vercel.app?message=success");
+  res.redirect("https://bulkmails-five.vercel.app/?message=success");
   // res.json({
   //   success:true,
   //   message:"Mails sent successfully"
@@ -172,7 +172,7 @@ let personalizedBody = mailBody;
 console.log("personalizedBody:", personalizedBody);
 
 const parts = [
-  `From: "${name}" <vidhilohia1111@gmail.com>`,
+  `From: "${name}" <${emailid}>`,
   `To: ${data[i].Emails||data[i].Email||data[i].email||data[i].emails}`,
   `Subject: ${personalizedSubject}`,
   'MIME-Version: 1.0',
