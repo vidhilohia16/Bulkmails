@@ -34,10 +34,15 @@ const app = express();
 app.use(cors());
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, "vite-project/build")));
+const fileURLToPath= require("url");
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "vite-project", "build", "index.html"));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+app.use(express.static(path.join(__dirname, 'vite-project/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'vite-project/dist', 'index.html'));
 });
 app.use(express.json());
 app.listen(3000, () => {
