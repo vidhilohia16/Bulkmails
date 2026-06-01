@@ -32,7 +32,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors());
-import path from "path";
+const path = require("path");
 
 app.use(express.static(path.join(__dirname, "vite-project/build")));
 
