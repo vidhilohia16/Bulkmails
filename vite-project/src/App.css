@@ -1,0 +1,27 @@
+.bubbles{
+  position: absolute; top: 80px; left: -120px;
+width: 450px; height: 450px;
+background: radial-gradient(circle, rgba(99,60,220,0.34) 0%, transparent 70%);
+pointer-events: none;
+}
+.bubble{
+  
+  position: absolute; top: 450px; right: -80px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(99,60,220,0.3) 0%, transparent 70%);
+  pointer-events: none;
+
+}
+.bubble2{
+   position: absolute; top: 700px; left: -120px;
+width: 450px; height: 450px;
+background: radial-gradient(circle, rgba(99,60,220,0.28) 0%, transparent 70%);
+pointer-events: none;
+}
+.bubble3{
+   position: absolute; top: 1200px; right: -80px;
+width: 450px; height: 450px;
+background: radial-gradient(circle, rgba(99,60,220,0.28) 0%, transparent 70%);
+pointer-events: none;
+}
+
