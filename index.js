@@ -87,7 +87,7 @@ app.get('/auth/google/callback', async (req, res) => {
   //   success:true,
   //   message:"sign up successful!"
   // })
-  res.redirect("http://localhost:5173?message=success");
+  res.redirect("https://bulkmails-five.vercel.app?message=success");
   // res.json({
   //   success:true,
   //   message:"Mails sent successfully"
