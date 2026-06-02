@@ -22,7 +22,28 @@ import { useState,useEffect,useRef } from 'react'
 
 
   function App() {
-    useEffect(() => {
+    
+
+    const [errormail,showerrormail]=useState(false);
+  
+    const [errorfile,showerrorfile]=useState(false);
+    
+     const [errorsubject,showerrorsubject]=useState(false);
+
+const [alertType, setAlert] = useState(null);
+const [isloading, setloading] = useState(false);
+
+const [recipients,setRecipients]=useState("0 Recipients")
+  const [excelFile, setExcelFile] = useState(null);
+const [emailid, setEmail] = useState("");
+const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const [mailBody, setMailBody] = useState("");
+
+  const [resume, setResume] = useState(null);
+  const [otherdocs, setOtherdocs] = useState(null);
+  useEffect(() => {
   const params = new URLSearchParams(window.location.search);
   const message = params.get("message");
 
@@ -46,26 +67,6 @@ useEffect(() => {
   return () => clearTimeout(timer);
 }, [alertType]);
   
-
-    const [errormail,showerrormail]=useState(false);
-  
-    const [errorfile,showerrorfile]=useState(false);
-    
-     const [errorsubject,showerrorsubject]=useState(false);
-
-const [alertType, setAlert] = useState(null);
-const [isloading, setloading] = useState(false);
-
-const [recipients,setRecipients]=useState("0 Recipients")
-  const [excelFile, setExcelFile] = useState(null);
-const [emailid, setEmail] = useState("");
-const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
-
-  const [mailBody, setMailBody] = useState("");
-
-  const [resume, setResume] = useState(null);
-  const [otherdocs, setOtherdocs] = useState(null);
   useEffect(() => {
   if (!excelFile) return;
 
