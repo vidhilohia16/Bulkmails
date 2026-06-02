@@ -28,7 +28,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                     console.log("SETTING ALERT");
                      
                 setAlert("loggedin");
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 0, behavior: "instant" });
                 return; }
                 showerrorfile(false);
                 handleFile(e.target.files[0])}}/>
@@ -62,7 +62,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 if (!isLoggedIn) {
                     console.log("SETTING ALERT");
                 setAlert("loggedin");
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 0, behavior: "instant" });
                 return; }
                 showerrorfile(false);
                intRef.current.click();
@@ -74,7 +74,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 const isLoggedIn = sessionStorageStorage.getItem("loggedIn")==="true";
                 if (!isLoggedIn) {
                 setAlert("loggedin");
-                window.scrollTo({ top: 0, behavior: "smooth" });
+                window.scrollTo({ top: 0, behavior: "instant" });
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
