@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - BulkMails</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      color: #222;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    h2 {
-      margin-top: 25px;
-    }
-    ul {
-      margin-top: 10px;
-    }
-    a {
-      color: #1a73e8;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Privacy Policy</h1>
+function PrivacyPolicy() {
+  return (
+    <div>
+      <h1>Privacy Policy</h1>
   <p><strong>Last Updated:</strong> June 2026</p>
 
   <h2>Introduction</h2>
@@ -120,5 +89,8 @@
     By using BulkMails, you agree to the terms of this Privacy Policy.
   </p>
 
-</body>
-</html>
+    </div>
+  );
+}
+
+export default PrivacyPolicy;

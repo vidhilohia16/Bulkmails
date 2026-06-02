@@ -65,9 +65,7 @@ app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
 
-app.get("/privacy-policy", (req, res) => {
-  res.render("privacy.ejs");
-});
+
 
 
 

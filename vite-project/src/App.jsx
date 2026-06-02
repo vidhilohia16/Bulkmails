@@ -7,6 +7,8 @@ import FakeButtons from './FakeButtons.jsx'
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
 import Contacts from './Contacts.jsx'
 import Content from './Content.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Attach from './Attach.jsx'
 import Button from '@mui/material/Button';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
@@ -142,7 +144,11 @@ if (response.status === 400) {
   }
   }
   return <>
-  
+   <BrowserRouter>
+      <Routes>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+    </BrowserRouter>
   <div className="bubbles"></div>
   <div className="bubble"></div>
   <div className="bubble2"></div>
