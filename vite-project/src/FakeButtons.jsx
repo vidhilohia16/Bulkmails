@@ -10,17 +10,16 @@ import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined';
 
 export default function FakeButtons(){
     return (
-        <Box sx={{justifyContent:"center",display:"flex",mt:"20px",gap:"0px"}}>
+        <Box sx={{display:"flex",justifyContent:"space-between",mt:"20px",gap:"0px",width:"100%"}}>
             
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
             backgroundColor: "#58585d",
             color: "#b4b4ba",
             opacity: 1,
-          },}}><AccountBoxIcon sx={{mr:0.5,width:"30px",height:"20px"}}></AccountBoxIcon>Contacts</Button>
+          },}}><AccountBoxIcon sx={{mr:0.5,height:"20px"}}></AccountBoxIcon>Contacts</Button>
           <Box
     sx={{
         mt:"20px",
-      width: "50px",
       height: "1px",
       bgcolor: "grey",
     }}

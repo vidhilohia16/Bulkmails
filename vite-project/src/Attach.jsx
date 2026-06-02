@@ -51,13 +51,14 @@ export default function Attach({setResume,setOtherdocs}){
                ATTACHMENTS
             </Typography>
             </Box>
+            <Box sx={{flexDirection:{xs:"column",md:"row"},gap:2}}>
 
             <Button onClick={()=>attachRef.current.click()} onDragOver={(e)=>{
               e.preventDefault();
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer1(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #a78bfa",width:"100%",padding:"24px 16px",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachRef} onChange={(e)=>{
@@ -81,7 +82,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer2(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",mx:"auto",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #a78bfa",mx:"auto",padding:"24px 16px",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachmoreRef} onChange={(e)=>{
@@ -98,6 +99,7 @@ export default function Attach({setResume,setOtherdocs}){
         </Box>
         </Box>
         </Button>
+        </Box>
 
         </Box>
     )

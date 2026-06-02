@@ -58,6 +58,8 @@ useEffect(() => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{
         height:"80px",
+        display:"flex",
+        justifyContent:"space-between",
         backgroundColor:"#0a0a0f",
         borderBottom: "0.5px solid rgba(255,255,255,0.15)" 
       }}>
