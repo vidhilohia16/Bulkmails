@@ -19,13 +19,13 @@ export default function FakeButtons(){
             flexShrink:0,
             color: "#b4b4ba",
             opacity: 1,
-          },}}><AccountBoxIcon sx={{mr:0.5,height:"20px"}}></AccountBoxIcon>Contacts</Button>
+          },}}><AccountBoxIcon sx={{height:"20px"}}></AccountBoxIcon>Contacts</Button>
           <Box
     sx={{
         mt:"20px",
          flex:1,
         width:"100%",
-        maxWidth:"50px",
+
       height: "1px",
       bgcolor: "grey",
     }}
@@ -37,14 +37,14 @@ export default function FakeButtons(){
             fontSize:{xs:"10px",md:"14px"},
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
-          },}}><EditNoteIcon sx={{mr:1}}></EditNoteIcon> Compose </Button>
+          },}}><EditNoteIcon></EditNoteIcon> Compose </Button>
           
           <Box 
     sx={{
         mt:"20px",
         flex:1,
         width:"100%",
-        maxWidth:"50px",
+   
       height: "1px",
       bgcolor: "grey",
      
@@ -57,13 +57,13 @@ export default function FakeButtons(){
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
             opacity: 1,
-          },}}><AttachFileOutlinedIcon fontSize="small" sx={{mr:1}}></AttachFileOutlinedIcon>Attach</Button>
+          },}}><AttachFileOutlinedIcon fontSize="small" ></AttachFileOutlinedIcon>Attach</Button>
           <Box
     sx={{
         mt:"20px",
          flex:1,
       width:"100%",
-        maxWidth:"50px",
+
       height: "1px",
       bgcolor: "grey",
     
@@ -76,7 +76,7 @@ export default function FakeButtons(){
             fontSize:{xs:"10px",md:"14px"},
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
-          },}}><RocketLaunchIcon fontSize="small" sx={{mr:1}}></RocketLaunchIcon>Send</Button>
+          },}}><RocketLaunchIcon fontSize="small" ></RocketLaunchIcon>Send</Button>
         </Box>
     )
 }

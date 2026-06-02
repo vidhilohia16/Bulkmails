@@ -51,7 +51,7 @@ export default function Attach({setResume,setOtherdocs}){
                ATTACHMENTS
             </Typography>
             </Box>
-            <Box sx={{flexDirection:{xs:"column",md:"row"},gap:2}}>
+            <Box sx={{display:"flex",flexDirection:{xs:"column",md:"row"},gap:2}}>
 
             <Button onClick={()=>attachRef.current.click()} onDragOver={(e)=>{
               e.preventDefault();

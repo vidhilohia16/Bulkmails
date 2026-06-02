@@ -115,7 +115,6 @@ useEffect(() => {
             width:"120px",
             height:"50px",
             mt:2,
-            mr:5,
             textTransform:"none",
             fontSize:"20px"
             // borderColor: "white",      
