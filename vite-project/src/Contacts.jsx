@@ -26,8 +26,9 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
              const isLoggedIn = sessionStorage.getItem("loggedIn")==="true";
                 if (!isLoggedIn) {
                     console.log("SETTING ALERT");
-                     window.scrollTo({ top: 0, behavior: "smooth" });
+                     
                 setAlert("loggedin");
+                window.scrollTo({ top: 0, behavior: "smooth" });
                 return; }
                 showerrorfile(false);
                 handleFile(e.target.files[0])}}/>

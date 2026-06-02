@@ -15,7 +15,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://bulkmails.vercel.app']
+  origin: ['http://localhost:5173', 'https://bulkmails-five.vercel.app']
 }));
 
 app.use(express.json());
