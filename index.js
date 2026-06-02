@@ -6,7 +6,15 @@ const { google } = require('googleapis')
 const session = require("express-session");
 const flash = require("connect-flash");
 const nodemailer = require("nodemailer");
+const methodOverride = require("method-override");
 const boundary = "myboundary";
+app.use(express.static(path.join(__dirname,"public")));
+app.set("views",path.join(__dirname,"views"));
+app.set("view engine","ejs");
+const methodOverride = require("method-override");
+app.use(methodOverride("_method"));
+
+app.use(express.urlencoded({extended:true}));
 
  const fs = require("fs");
  let data;
@@ -261,92 +269,10 @@ try {
   })
 // res.redirect("/auth/google");
   });
-  // app.post("/send-email",(req,res)=>{
-  //   res.json(`${data.length} Recipients` );
-  // })
-
-// const oauth2Client = new google.auth.OAuth2(
-//   process.env.GOOGLE_CLIENT_ID,
-//   process.env.GOOGLE_CLIENT_SECRET,
-//   process.env.REDIRECT_URI
-// )
-// app.get('/auth/google', (req, res) => {
-//  console.log("AUTH GOOGLE HIT");
-//   const url = oauth2Client.generateAuthUrl({
-//     access_type: 'offline',
-//     prompt: 'consent',
-//     scope: ['https://www.googleapis.com/auth/gmail.send']
-//   })
-//   res.redirect(url)
-// })
-// app.get('/auth/google/callback', async (req, res) => {
-//   console.log("CALLBACK HIT");
-//   const code = req.query.code
-
-//   const { tokens } = await oauth2Client.getToken(code);
-//   usertokens=tokens;
-
-//   oauth2Client.setCredentials(tokens);
-
-//    gmail = google.gmail({
-//     version: 'v1',
-//     auth: oauth2Client
-//   })
-//   req.flash("success","sign up successful");
-//   res.redirect("http://localhost:5173");
-// }
-
-// for(let i=0;i<data.length;i++){
-// const message = [
-//   'From: vidhilohia1111@gmail.com',
-//   `To: ${data[i].Email}`,
-//   `Subject: ${subject}`,
-//   'MIME-Version: 1.0',
-//   `Content-Type: multipart/mixed; boundary="${boundary}"`,
-//   '',
-
-//   `--${boundary}`,
-//   'Content-Type: text/plain; charset="UTF-8"',
-//   '',
-//   mailBody,
-//   '',
-
-//   `--${boundary}`,
-//   `Content-Type: application/pdf; name="${resume.filename}"`,
-//   'Content-Transfer-Encoding: base64',
-//   `Content-Disposition: attachment; filename="${resume.filename}"`,
-//   '',
-//   fileContent,
-//   '',
-
-  
-//   `--${boundary}`,
-//   `Content-Type: application/pdf; name="${otherdocs.filename}"`,
-//   'Content-Transfer-Encoding: base64',
-//   `Content-Disposition: attachment; filename="${otherdocs.filename}"`,
-//   '',
-//   fileContent2,
-//   '',
-
-//   `--${boundary}--`
-// ].join('\n');
-  
-//   const encodedMessage = Buffer
-//     .from(message)
-//     .toString('base64')
-//     .replace(/\+/g, '-')
-//     .replace(/\//g, '_')
-//     .replace(/=+$/, '')
-
-//   await gmail.users.messages.send({
-//     userId: 'me',
-//     requestBody: {
-//       raw: encodedMessage
-//     }
-//   })
-//   }
-  
-
+ 
+app.get("/privacy-policy", (req, res) => {
+  res.render("privacy.ejs");
+});
 
 
 
