@@ -29,8 +29,8 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             CONTACT
           </Typography>
-          <Box sx={{display:"flex"}}><EmailOutlinedIcon sx={{color:"#6b6b9a"}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link></Box>
-          <Box sx={{display:"flex"}}><LinkedInIcon sx={{color:"#6b6b9a"}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
+          <Box sx={{display:"flex"}}><EmailOutlinedIcon fontSize="small" sx={{color:"#6b6b9a"}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link></Box>
+          <Box sx={{display:"flex"}}><LinkedInIcon fontSize="small" sx={{color:"#6b6b9a"}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
         </Box>
 
         {/* Legal */}
@@ -38,7 +38,7 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <Box sx={{display:"flex"}}><ShieldOutlinedIcon sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link></Box>
+          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link></Box>
         </Box>
 
       </Box>
