@@ -203,6 +203,8 @@ if (response.status === 400) {
     color: isloading ? "rgba(255,255,255,0.5)" : "#fff",
     borderColor:"white",
     color: "#fff",
+    flexShrink:0,
+    whiteSpace:'nowrap',
     fontWeight: 500, 
     padding: "12px 28px",
     borderRadius: "10px",

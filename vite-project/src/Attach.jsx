@@ -30,7 +30,7 @@ export default function Attach({setResume,setOtherdocs}){
   }
 
     return (
-        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"200px",width:"100%",maxWidth:"800px",mt:"40px",borderRadius:"10px",p:2}}>
+        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"auto",width:"100%",maxWidth:"800px",mt:"40px",borderRadius:"10px",p:2}}>
             <Box sx={{display:"flex"}}>
             <Box sx={{
   width: 22,
@@ -57,7 +57,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer1(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",width:"375px",height:"140px",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"375px",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachRef} onChange={(e)=>{
@@ -81,7 +81,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer2(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",width:"375px",height:"140px",mt:"5px",ml:"17px",backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",ml:"17px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachmoreRef} onChange={(e)=>{
