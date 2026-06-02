@@ -10,7 +10,8 @@ import AttachFileOutlinedIcon from '@mui/icons-material/AttachFileOutlined';
 
 export default function FakeButtons(){
     return (
-        <Box sx={{display:"flex",justifyContent:"space-between",mt:"20px",gap:"0px",width:"100%",maxWidth:"600px"}}>
+        <Box sx={{display:"flex",justifyContent:"center",mt:"20px",width:"100%"}}>
+          <Box sx={{display:"flex",width:{xs:"100%",md:"600px"},gap:"0px",alignItems:"center"}}>
             
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
             backgroundColor: "#58585d",
@@ -77,6 +78,7 @@ export default function FakeButtons(){
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
           },}}><RocketLaunchIcon fontSize="small" ></RocketLaunchIcon>Send</Button>
+        </Box>
         </Box>
     )
 }
