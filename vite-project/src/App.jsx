@@ -175,7 +175,7 @@ if (response.status === 400) {
   <div className="bubble2"></div>
   <div className="bubble3"></div>
   <ButtonAppBar alertType={alertType} setAlert={setAlert} />
-  <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px", px: { xs: 2, md: 0 }  }}>
+  <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px", px: { xs: 2, md: 0 } ,position:"absolute" }}>
   {alertType === "signup" && (
     <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "15px"}}}>
@@ -215,7 +215,8 @@ if (response.status === 400) {
   
 </Box>
 
-  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(124,58,237,0.18)",borderColor:"rgba(124,58,237,0.8)",borderRadius:"40px",display:"flex",justifyContent:"center",margin: "0 auto",position:"fixed",top:"65px",mb:"10px"}}><BoltOutlinedIcon fontSize="small" sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#c4b5fd"}}>Bulk email,simplified</Typography></Button>
+  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(124,58,237,0.18)",borderColor:"rgba(124,58,237,0.8)",borderRadius:"40px",display:"flex",justifyContent:"center",margin: "0 auto",mb:"10px"}}><BoltOutlinedIcon fontSize="small" sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#c4b5fd"}}>Bulk email,simplified</Typography></Button>
+  
   <Heading />
   
   <TextUnderHeading />
