@@ -16,6 +16,7 @@ import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import Alert from '@mui/material/Alert';
 import CircularProgress from '@mui/material/CircularProgress'
+import Footer from './Footer.jsx';
 
 import { useState,useEffect,useRef } from 'react'
 
@@ -230,7 +231,7 @@ if (response.status === 400) {
     }} />
   )}
 </Box>
- 
+ <Footer/>
   </>
 }
 
