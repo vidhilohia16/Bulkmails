@@ -33,6 +33,7 @@ import { useState,useEffect,useRef } from 'react'
 const [alertType, setAlert] = useState(null);
 const [isloading, setloading] = useState(false);
 
+
 const [recipients,setRecipients]=useState("0 Recipients")
   const [excelFile, setExcelFile] = useState(null);
 const [emailid, setEmail] = useState("");
@@ -175,7 +176,7 @@ if (response.status === 400) {
   <div className="bubble2"></div>
   <div className="bubble3"></div>
   <ButtonAppBar alertType={alertType} setAlert={setAlert} />
-  <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "1px",position:"absolute",left:"50%",transform:"translateX(-50%)" }}>
+  <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "1px",position:"fixed",left:"50%",transform:"translateX(-50%)" }}>
   {alertType === "signup" && (
     <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       my:"auto"}}}>
