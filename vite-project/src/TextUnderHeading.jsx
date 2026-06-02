@@ -5,6 +5,6 @@ export default function TextUnderHeading(){
     color:"grey",
     mt:"20px"
    }}>
-    Upload your contacts spreadsheet, compose your pitch, attach <br/>your resume — and blast it to hundreds of recruiters at once
+    Upload your contacts spreadsheet, compose your pitch, attach your resume — and blast it to hundreds of recruiters at once
    </Typography>
 }
