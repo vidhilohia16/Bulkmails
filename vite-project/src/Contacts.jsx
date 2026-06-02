@@ -59,9 +59,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
             const isLoggedIn = sessionStorage.getItem("loggedIn")==="true";
                 if (!isLoggedIn) {
                     console.log("SETTING ALERT");
-                     window.scrollTo(0,0);
-                     document.documentElement.scrollTop=0;
-                     document.body.scrollTop=0;
+                     window.scrollTo({top:-100,behavior:'instant'});
                 setAlert("loggedin");
                
                 return; }
@@ -74,9 +72,8 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 showerrorfile(false);
                 const isLoggedIn = sessionStorage.getItem("loggedIn")==="true";
                 if (!isLoggedIn) {
-                      window.scrollTo(0,0);
-                       document.documentElement.scrollTop=0;
-                     document.body.scrollTop=0;
+                      window.scrollTo({top:-100,behavior:'instant'});
+                       
                 setAlert("loggedin");
               
                 return; }
