@@ -1,16 +1,20 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 
 export default function Footer() {
   return (
-    <Box sx={{ borderTop: "1px solid #2e2e3a", mt: 8, px: { xs: 2, md: 6 }, py: 4 }}>
+    <Box sx={{ borderTop: "1px solid #2e2e3a", mt: 8, px: { xs: 2, md: 6 }, py: 4,backgroundColor:"#13121f" }}>
       <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" }, gap: 4 }}>
 
         {/* Logo */}
         <Box>
           <Typography sx={{ color: "white", fontWeight: 500, fontSize: "16px", mb: 1 }}>
-            ✉️ blastmail
+            <ForwardToInboxOutlinedIcon sx={{color:"#a78bfa"}}></ForwardToInboxOutlinedIcon> blastmail
           </Typography>
           <Typography sx={{ color: "#6b6b9a", fontSize: "13px" }}>
             Bulk email, simplified.
@@ -22,8 +26,8 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             CONTACT
           </Typography>
-          <Link href="mailto:vidhilohia16@email.com" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link>
-          <Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link>
+          <EmailOutlinedIcon sx={{color:"#6b6b9a"}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link>
+          <LinkedInIcon sx={{color:"#6b6b9a"}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link>
         </Box>
 
         {/* Legal */}
@@ -31,7 +35,7 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link>
+          <ShieldOutlinedIcon sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link>
         </Box>
 
       </Box>
