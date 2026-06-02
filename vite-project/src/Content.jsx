@@ -61,7 +61,7 @@ I hope you're doing well! I am {name}.I have a passion for [domain]. I admire yo
 
 
 return (
-    <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",borderColor:"rgba(255,255,255,0.3)",width:"800px",height:"600px",mx:"auto",p:2,mt:"40px",mb:"0px",borderRadius:"10px"}}>
+    <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",borderColor:"rgba(255,255,255,0.3)",width:"100%",maxWidth:"800px",height:"600px",mx:"auto",p:2,mt:"40px",mb:"0px",borderRadius:"10px"}}>
         
         <Box sx={{display:"flex",mb:2}}>
             <Box sx={{

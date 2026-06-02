@@ -30,7 +30,7 @@ export default function Attach({setResume,setOtherdocs}){
   }
 
     return (
-        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"200px",width:"800px",mt:"40px",borderRadius:"10px",p:2}}>
+        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"200px",width:"100%",maxWidth:"800px",mt:"40px",borderRadius:"10px",p:2}}>
             <Box sx={{display:"flex"}}>
             <Box sx={{
   width: 22,

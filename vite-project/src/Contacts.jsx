@@ -32,7 +32,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
                 showerrorfile(false);
                 handleFile(e.target.files[0])}}/>
-        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"270px",width:"800px",mt:"60px",borderRadius:"10px",p:2,borderColor:"rgba(255,255,255,0.2)"}}>
+        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"270px",width:"100%",maxWidth:"800px", mt:"60px",borderRadius:"10px",p:2,borderColor:"rgba(255,255,255,0.2)"}}>
             <Box sx={{display:"flex"}}>
                 <Box sx={{
   width: 22,
