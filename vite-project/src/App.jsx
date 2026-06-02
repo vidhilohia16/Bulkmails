@@ -147,9 +147,8 @@ if (response.status === 400) {
    <BrowserRouter>
       <Routes>
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-    </BrowserRouter>
-  <div className="bubbles"></div>
+        <Route path="*" element={<>
+        <div className="bubbles"></div>
   <div className="bubble"></div>
   <div className="bubble2"></div>
   <div className="bubble3"></div>
@@ -232,6 +231,13 @@ if (response.status === 400) {
     }} />
   )}
 </Box>
+      </>} />
+
+
+
+      </Routes>
+    </BrowserRouter>
+ 
   </>
 }
 
