@@ -9,9 +9,15 @@ const nodemailer = require("nodemailer");
 const boundary = "myboundary";
 
 const methodOverride = require("method-override");
+const cors = require("cors");
 
+const app = express();
 
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://bulkmails.vercel.app']
+}));
 
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname,"public")));
 app.set("views",path.join(__dirname,"views"));
@@ -39,13 +45,6 @@ require('dotenv').config()
 
 
 
-const cors = require("cors");
-
-const app = express();
-
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://bulkmails.vercel.app']
-}));
 // const path = require("path");
 
 // const fileURLToPath= require("url");
@@ -58,11 +57,14 @@ app.use(cors({
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'vite-project/dist', 'index.html'));
 // });
-app.use(express.json());
+
 app.listen(3000, () => {
   console.log('Server running')
 })
 
+app.get("/privacy-policy", (req, res) => {
+  res.render("privacy.ejs");
+});
 
 
 
@@ -274,9 +276,7 @@ try {
 // res.redirect("/auth/google");
   });
  
-app.get("/privacy-policy", (req, res) => {
-  res.render("privacy.ejs");
-});
+
 
 
 
