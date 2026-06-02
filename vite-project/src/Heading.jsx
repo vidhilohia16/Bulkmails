@@ -37,6 +37,7 @@ export default function Heading(){
     sx={{
       fontSize: { xs: "2rem", md: "3.75rem" },
       fontWeight: 700,
+      textAlign:"center",
       lineHeight: 1.2,
     }}
   >
