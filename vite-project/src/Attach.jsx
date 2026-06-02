@@ -81,7 +81,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer2(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",mx:"auto",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",ml:"17px",backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #a78bfa",mx:"auto",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachmoreRef} onChange={(e)=>{

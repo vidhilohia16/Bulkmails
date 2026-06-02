@@ -76,7 +76,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
-            sx={{border:"1px dashed #a78bfa",width:"95%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
+            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
          
            
@@ -95,7 +95,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
         </Button>
  {errorfile?<Box sx={{display:"flex",gap:"4px"}}><InfoOutlinedIcon fontSize='small' sx={{color:"red",mt:"2px"}}></InfoOutlinedIcon><Typography variant='body1' sx={{color:"red",mt:"2px"}}>Excel file is required</Typography></Box>:null}
 
-      <Box sx={{backgroundColor:"#1e1d1d",width:"95%",maxWidth:"766px",display:"flex",mt:2,height:"auto",p:1,borderRadius:"10px",}}><InfoOutlinedIcon fontSize='small' sx={{color:"#8c8585",mr:1,mt:"1px"}}></InfoOutlinedIcon><Typography sx={{color:"#8c8585"}}>Your sheet must have an 'Email' column</Typography></Box>
+      <Box sx={{backgroundColor:"#1e1d1d",width:"100%",mx:"auto",maxWidth:"766px",display:"flex",mt:2,height:"auto",p:1,borderRadius:"10px",}}><InfoOutlinedIcon fontSize='small' sx={{color:"#8c8585",mr:1,mt:"1px"}}></InfoOutlinedIcon><Typography sx={{color:"#8c8585"}}>Your sheet must have an 'Email' column</Typography></Box>
       
         </Box>
        </>
