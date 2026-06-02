@@ -1,4 +1,5 @@
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 export default function TextUnderHeading(){
    return <Box sx={{mx:"auto"}}>
       <Typography variant="h5" sx={{
