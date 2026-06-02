@@ -65,7 +65,7 @@ useEffect(() => {
       }}>
         <Toolbar>
           <ForwardToInboxOutlinedIcon  sx={{color:"#a78bfa",mt:2,ml: { xs: 0, md: "20px" },fontSize:"38px"}}></ForwardToInboxOutlinedIcon>
-          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: 0, md: "5px" }}}>blastmail </Typography>
+          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: "2px", md: "5px" }}}>blastmail </Typography>
           
 <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px" }}>
   {alertType === "signup" && (
