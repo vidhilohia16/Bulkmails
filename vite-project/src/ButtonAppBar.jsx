@@ -71,37 +71,37 @@ useEffect(() => {
   {alertType === "signup" && (
     <Alert severity="success" variant="filled" sx={{ width:"100%",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>Sign in successful</Typography>
+      <Typography variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" } }}>Sign in successful</Typography>
     </Alert>
   )}
   {alertType === "mail" && (
     <Alert severity="success" variant="filled" sx={{ width:"100%",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>Mails Sent Successfully</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" }}}>Mails Sent Successfully</Typography>
     </Alert>
   )}
   {alertType === "loggedin" && (
     <Alert severity="error" variant="filled" sx={{ width:"100%",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>You need to sign in first to upload</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" }}}>You need to sign in first to upload</Typography>
     </Alert>
   )}
   {alertType === "loggedinsend" && (
     <Alert severity="error" variant="filled" sx={{ width:"100%",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>Session expired please sign in agin</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" }}}>Session expired please sign in agin</Typography>
     </Alert>
   )}
   {alertType === "missingfile" && (
     <Alert severity="error" variant="filled" sx={{width:"100%",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>Excel file is empty</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" }}}>Excel file is empty</Typography>
     </Alert>
   )}  
   {alertType === "missingcol" && (
     <Alert severity="error" variant="filled" sx={{ width:"100%",maxwidth: "350px",display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize:"20px"}}>Email column is missing</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" }}}>Email column is missing</Typography>
     </Alert>
   )}  
   
