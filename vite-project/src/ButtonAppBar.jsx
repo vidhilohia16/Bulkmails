@@ -26,7 +26,6 @@ export default function ButtonAppBar({ alertType, setAlert }) {
 //   msg=data.message;
 //   if (data.success) {
 //     setAlert("mail");
-//     window.scrollTo({ top: 0, behavior: "smooth" }); // ✅ scroll to alert
 //   }
 // }
   return (
