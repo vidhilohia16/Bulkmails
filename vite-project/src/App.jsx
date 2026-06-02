@@ -8,7 +8,7 @@ import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';
 import Contacts from './Contacts.jsx'
 import Content from './Content.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import Attach from './Attach.jsx'
 import Button from '@mui/material/Button';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
