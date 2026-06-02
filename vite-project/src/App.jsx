@@ -100,7 +100,7 @@ useEffect(() => {
   async function ClickButton() {
      const isLoggedIn = sessionStorage.getItem("loggedIn");
                 if (isLoggedIn!="true") {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
+                 document.getElementById("top").scrollIntoView({behavior:"smooth"});
                 setAlert("loggedinsend");
                   return; }
   
@@ -153,13 +153,13 @@ if(excelFile){
   if (response.status === 401) {
   sessionStorage.removeItem("loggedIn");
   setAlert("loggedinsend"); // or a different alert
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  document.getElementById("top").scrollIntoView({behavior:"smooth"});
   setloading(false);
   return;
 }
 if (response.status === 400) {
   setAlert("missingcol"); // or a different alert
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  document.getElementById("top").scrollIntoView({behavior:"smooth"});
   return;
 }
   if (data.success) {
