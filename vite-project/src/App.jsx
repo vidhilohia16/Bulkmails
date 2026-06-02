@@ -178,44 +178,44 @@ if (response.status === 400) {
   <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px", px: { xs: 2, md: 0 }  }}>
   {alertType === "signup" && (
     <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Sign in successful</Typography>
+      mt: "15px"}}}>
+      <Typography variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" }}}>Sign in successful</Typography>
     </Alert>
   )}
   {alertType === "mail" && (
     <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Mails Sent Successfully</Typography>
+      mt: "15px"}}}>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" },}}>Mails Sent Successfully</Typography>
     </Alert>
   )}
   {alertType === "loggedin" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>You need to sign in first to upload</Typography>
+      mt: "15px"}}}>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" },}}>You need to sign in first to upload</Typography>
     </Alert>
   )}
   {alertType === "loggedinsend" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Session expired please sign in agin</Typography>
+      mt: "15px"}}}>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" },}}>Session expired please sign in agin</Typography>
     </Alert>
   )}
   {alertType === "missingfile" && (
     <Alert severity="error" variant="filled" sx={{width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Excel file is empty</Typography>
+      mt: "15px"}}}>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" },}}>Excel file is empty</Typography>
     </Alert>
   )}  
   {alertType === "missingcol" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxwidth: "350px",display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Email column is missing</Typography>
+      mt: "15px"}}}>
+      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "20px", md: "20px" },}}>Email column is missing</Typography>
     </Alert>
   )}  
   
 </Box>
 
-  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(124,58,237,0.18)",borderColor:"rgba(124,58,237,0.8)",borderRadius:"40px",display:"flex",justifyContent:"center",margin: "0 auto",mt:"65px",mb:"10px"}}><BoltOutlinedIcon fontSize="small" sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#c4b5fd"}}>Bulk email,simplified</Typography></Button>
+  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(124,58,237,0.18)",borderColor:"rgba(124,58,237,0.8)",borderRadius:"40px",display:"flex",justifyContent:"center",margin: "0 auto",position:"fixed",top:"65px",mb:"10px"}}><BoltOutlinedIcon fontSize="small" sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#c4b5fd"}}>Bulk email,simplified</Typography></Button>
   <Heading />
   
   <TextUnderHeading />
