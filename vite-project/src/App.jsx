@@ -185,31 +185,31 @@ if (response.status === 400) {
   {alertType === "mail" && (
     <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       my:"auto"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "12px", md: "16px"  },}}>Mails Sent Successfully</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",whiteSpace:"nowrap",fontSize: { xs: "12px", md: "16px"  },}}>Mails Sent Successfully</Typography>
     </Alert>
   )}
   {alertType === "loggedin" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
      my:"auto"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "12px", md: "16px" },}}>You need to sign in first to upload</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",whiteSpace:"nowrap",fontSize: { xs: "12px", md: "16px" },}}>You need to sign in first to upload</Typography>
     </Alert>
   )}
   {alertType === "loggedinsend" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
      my:"auto"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "12px", md: "16px" },}}>Session expired please sign in agin</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",whiteSpace:"nowrap",fontSize: { xs: "12px", md: "16px" },}}>Session expired please sign in agin</Typography>
     </Alert>
   )}
   {alertType === "missingfile" && (
     <Alert severity="error" variant="filled" sx={{width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       my:"auto"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: {xs: "12px", md: "16px" },}}>Excel file is empty</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",whiteSpace:"nowrap",fontSize: {xs: "12px", md: "16px" },}}>Excel file is empty</Typography>
     </Alert>
   )}  
   {alertType === "missingcol" && (
     <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxwidth: "350px",display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
       my:"auto"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: {xs: "12px", md: "16px" },}}>Email column is missing</Typography>
+      <Typography  variant='body1' sx={{textAlign:"center",whiteSpace:"nowrap",fontSize: {xs: "12px", md: "16px" },}}>Email column is missing</Typography>
     </Alert>
   )}  
   
