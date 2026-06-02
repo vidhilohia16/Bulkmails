@@ -78,7 +78,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
-            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
+            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"auto",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
          
            
