@@ -23,7 +23,7 @@ export default function FakeButtons(){
           },}}><AccountBoxIcon sx={{height:"20px"}}></AccountBoxIcon>Contacts</Button>
           <Box
     sx={{
-        mt:"20px",
+     alignSelf:"center",
          flex:1,
         width:"100%",
 
@@ -42,7 +42,7 @@ export default function FakeButtons(){
           
           <Box 
     sx={{
-        mt:"20px",
+        alignSelf:"center",
         flex:1,
         width:"100%",
    
@@ -61,7 +61,7 @@ export default function FakeButtons(){
           },}}><AttachFileOutlinedIcon fontSize="small" ></AttachFileOutlinedIcon>Attach</Button>
           <Box
     sx={{
-        mt:"20px",
+        alignSelf:"center",
          flex:1,
       width:"100%",
 
