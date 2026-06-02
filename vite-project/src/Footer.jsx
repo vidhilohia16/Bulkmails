@@ -19,6 +19,9 @@ export default function Footer() {
           <Typography sx={{ color: "#6b6b9a", fontSize: "13px" }}>
             Bulk email, simplified.
           </Typography>
+          <Typography sx={{ color: "#6b6b9a", fontSize: "13px" }}>
+            Write once,Hit 500 inboxes
+          </Typography>
         </Box>
 
         {/* Contact */}
@@ -26,8 +29,8 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             CONTACT
           </Typography>
-          <EmailOutlinedIcon sx={{color:"#6b6b9a"}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link>
-          <LinkedInIcon sx={{color:"#6b6b9a"}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link>
+          <Box sx={{display:"flex"}}><EmailOutlinedIcon sx={{color:"#6b6b9a"}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>vidhilohia16@email.com</Link></Box>
+          <Box sx={{display:"flex"}}><LinkedInIcon sx={{color:"#6b6b9a"}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
         </Box>
 
         {/* Legal */}
@@ -35,13 +38,13 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <ShieldOutlinedIcon sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link>
+          <Box sx={{display:"flex"}}><ShieldOutlinedIcon sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>Privacy policy</Link></Box>
         </Box>
 
       </Box>
 
       {/* Bottom bar */}
-      <Box sx={{ borderTop: "1px solid #2e2e3a", mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
+      <Box sx={{ borderTop: "1px solid #2e2e3a", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
         <Typography sx={{ color: "#3e3e5a", fontSize: "12px" }}>© 2026 blastmail. All rights reserved.</Typography>
         <Typography sx={{ color: "#3e3e5a", fontSize: "12px" }}>Made with ♥ by Vidhi</Typography>
       </Box>
