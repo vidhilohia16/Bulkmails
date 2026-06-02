@@ -15,31 +15,6 @@ export default function ButtonAppBar({ alertType, setAlert }) {
   }
 
    // ✅ 1. Handle URL params (runs once)
-useEffect(() => {
-  const params = new URLSearchParams(window.location.search);
-  const message = params.get("message");
-
-  if (message === "success") {
-    sessionStorage.setItem("loggedIn", "true");
-    setAlert("signup");
-  }
-
-  if (params.toString()) {
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-}, []);
-// ✅ 2. Handle alert timeout
-useEffect(() => {
-  if (!alertType) return;
-
-  const timer = setTimeout(() => {
-    setAlert(null);
-  }, 7000);
-
-  return () => clearTimeout(timer);
-}, [alertType]);
-  
-  
 
 
 // async function sendData() {
@@ -67,45 +42,6 @@ useEffect(() => {
           <ForwardToInboxOutlinedIcon  sx={{color:"#a78bfa",mt:2,ml: { xs: 0, md: "20px" },fontSize:"38px"}}></ForwardToInboxOutlinedIcon>
           <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: "2px", md: "5px" }}}>blastmail </Typography>
           
-<Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px", px: { xs: 2, md: 0 }  }}>
-  {alertType === "signup" && (
-    <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Sign in successful</Typography>
-    </Alert>
-  )}
-  {alertType === "mail" && (
-    <Alert severity="success" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Mails Sent Successfully</Typography>
-    </Alert>
-  )}
-  {alertType === "loggedin" && (
-    <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>You need to sign in first to upload</Typography>
-    </Alert>
-  )}
-  {alertType === "loggedinsend" && (
-    <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxWidth: "450px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Session expired please sign in agin</Typography>
-    </Alert>
-  )}
-  {alertType === "missingfile" && (
-    <Alert severity="error" variant="filled" sx={{width:"fit-content",mx:"auto",maxWidth: "350px" ,display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Excel file is empty</Typography>
-    </Alert>
-  )}  
-  {alertType === "missingcol" && (
-    <Alert severity="error" variant="filled" sx={{ width:"fit-content",mx:"auto",maxwidth: "350px",display:"flex",justifyContent:"center", "& .MuiAlert-icon": {
-      mt: "4px"}}}>
-      <Typography  variant='body1' sx={{textAlign:"center",fontSize: { xs: "10px", md: "20px" },whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>Email column is missing</Typography>
-    </Alert>
-  )}  
-  
-</Box>
           <Box sx={{
             ml: "auto", display: "flex", gap: 2
           }}>
