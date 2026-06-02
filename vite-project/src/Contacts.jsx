@@ -32,7 +32,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
                 showerrorfile(false);
                 handleFile(e.target.files[0])}}/>
-        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"270px",width:"100%",maxWidth:"800px", mt:"60px",borderRadius:"10px",p:2,borderColor:"rgba(255,255,255,0.2)"}}>
+        <Box sx={{backgroundColor:"rgba(255,255,255,0.04)",mx:"auto",height:"auto",width:"100%",maxWidth:"800px", mt:"60px",borderRadius:"10px",p:2,borderColor:"rgba(255,255,255,0.2)"}}>
             <Box sx={{display:"flex"}}>
                 <Box sx={{
   width: 22,
@@ -78,7 +78,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
-            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"auto",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
+            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
          
            
