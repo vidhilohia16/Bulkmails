@@ -35,7 +35,7 @@ export default function Heading(){
 
   <Typography
     sx={{
-      fontSize: { xs: "2rem", md: "3.75rem" },
+      fontSize: { xs: "1.7rem", md: "3.75rem" },
       fontWeight: 700,
       textAlign:"center",
       lineHeight: 1.2,
