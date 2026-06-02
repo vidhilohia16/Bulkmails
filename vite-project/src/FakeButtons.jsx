@@ -14,12 +14,18 @@ export default function FakeButtons(){
             
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
             backgroundColor: "#58585d",
+            fontSize:{xs:"10px",md:"14px"},
+            padding:{xs:"4px 8px",md:"6px 16px"},
+            flexShrink:0,
             color: "#b4b4ba",
             opacity: 1,
           },}}><AccountBoxIcon sx={{mr:0.5,height:"20px"}}></AccountBoxIcon>Contacts</Button>
           <Box
     sx={{
         mt:"20px",
+         flex:1,
+        width:"100%",
+        maxWidth:"50px",
       height: "1px",
       bgcolor: "grey",
     }}
@@ -28,12 +34,17 @@ export default function FakeButtons(){
             backgroundColor: "#58585d",
             color: "#b4b4ba",
             opacity: 1,
+            fontSize:{xs:"10px",md:"14px"},
+            padding:{xs:"4px 8px",md:"6px 16px"},
+            flexShrink:0,
           },}}><EditNoteIcon sx={{mr:1}}></EditNoteIcon> Compose </Button>
           
           <Box 
     sx={{
         mt:"20px",
-      width: "50px",
+        flex:1,
+        width:"100%",
+        maxWidth:"50px",
       height: "1px",
       bgcolor: "grey",
      
@@ -42,12 +53,17 @@ export default function FakeButtons(){
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
             backgroundColor: "#58585d",
             color: "#b4b4ba",
+            fontSize:{xs:"10px",md:"14px"},
+            padding:{xs:"4px 8px",md:"6px 16px"},
+            flexShrink:0,
             opacity: 1,
           },}}><AttachFileOutlinedIcon fontSize="small" sx={{mr:1}}></AttachFileOutlinedIcon>Attach</Button>
           <Box
     sx={{
         mt:"20px",
-      width: "50px",
+         flex:1,
+      width:"100%",
+        maxWidth:"50px",
       height: "1px",
       bgcolor: "grey",
     
@@ -57,6 +73,9 @@ export default function FakeButtons(){
             backgroundColor: "#58585d",
             color: "#b4b4ba",
             opacity: 1,
+            fontSize:{xs:"10px",md:"14px"},
+            padding:{xs:"4px 8px",md:"6px 16px"},
+            flexShrink:0,
           },}}><RocketLaunchIcon fontSize="small" sx={{mr:1}}></RocketLaunchIcon>Send</Button>
         </Box>
     )

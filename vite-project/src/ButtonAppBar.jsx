@@ -64,8 +64,8 @@ useEffect(() => {
         borderBottom: "0.5px solid rgba(255,255,255,0.15)" 
       }}>
         <Toolbar>
-          <ForwardToInboxOutlinedIcon  sx={{color:"#a78bfa",mt:2,ml:4,fontSize:"38px"}}></ForwardToInboxOutlinedIcon>
-          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml:1,}}>blastmail </Typography>
+          <ForwardToInboxOutlinedIcon  sx={{color:"#a78bfa",mt:2,ml: { xs: 0, md: "20px" },fontSize:"38px"}}></ForwardToInboxOutlinedIcon>
+          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: 0, md: "5px" }}}>blastmail </Typography>
           
 <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: "13px" }}>
   {alertType === "signup" && (
@@ -110,7 +110,7 @@ useEffect(() => {
             ml: "auto", display: "flex", gap: 2
           }}>
           <Button variant="outlined" onClick={login} sx={{
-            
+            mr: { xs: 0, md: "20px" },
             color:"white",
             width:"120px",
             height:"50px",
