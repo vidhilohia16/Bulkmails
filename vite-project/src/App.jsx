@@ -207,7 +207,7 @@ if (response.status === 400) {
     flexShrink:0,
     whiteSpace:'nowrap',
     fontWeight: 500, 
-    padding: "12px 28px",
+    padding: "12px 20px",
     borderRadius: "10px",
     textTransform: "none",
     '&:hover': { background: "#363638" }
