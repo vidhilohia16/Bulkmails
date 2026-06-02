@@ -7,6 +7,7 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const nodemailer = require("nodemailer");
 const boundary = "myboundary";
+const path=require("path");
 
 const methodOverride = require("method-override");
 const cors = require("cors");
@@ -58,9 +59,11 @@ require('dotenv').config()
 //   res.sendFile(path.join(__dirname, 'vite-project/dist', 'index.html'));
 // });
 
-app.listen(3000, () => {
-  console.log('Server running')
-})
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
+});
 
 app.get("/privacy-policy", (req, res) => {
   res.render("privacy.ejs");
