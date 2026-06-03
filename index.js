@@ -1,6 +1,7 @@
 const XLSX = require("xlsx");
 const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
+// const upload = multer({ dest: 'uploads/' })
+const upload = multer({ storage: multer.memoryStorage() });
 const express = require('express')
 const { google } = require('googleapis')
 const session = require("express-session");
@@ -141,7 +142,8 @@ const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
     resume = req.files.resume ? req.files.resume[0] : null;
 otherdocs = req.files.otherdocs ? req.files.otherdocs[0] : null;
 
-const workbook = XLSX.readFile(excelfile.path)
+// const workbook = XLSX.readFile(excelfile.path)
+const workbook = XLSX.read(excelfile.buffer);
 
 // Get first sheet name
 const sheetName = workbook.SheetNames[0]
@@ -161,12 +163,14 @@ const sheet = workbook.Sheets[sheetName]
 console.log(data)
 let fileContent = "";
 if (resume!=null) {
-  fileContent = fs.readFileSync(resume.path).toString("base64");
+  // fileContent = fs.readFileSync(resume.path).toString("base64");
+  fileContent = resume.buffer.toString("base64");
 }
 let fileContent2 = "";
 if (otherdocs!=null) {
   const filePath2 = otherdocs.path;
-  fileContent2 = fs.readFileSync(filePath2).toString("base64");
+  // fileContent2 = fs.readFileSync(filePath2).toString("base64");
+  fileContent2 = otherdocs.buffer.toString("base64");
 }
 
 for(let i=0;i<data.length;i++){
