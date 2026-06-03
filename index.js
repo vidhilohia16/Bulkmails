@@ -39,7 +39,7 @@ let name;
 let resume;
 let excelfile;
 let otherdocs;
-let gmail;
+
 
 require('dotenv').config()
 
@@ -94,10 +94,7 @@ app.get('/auth/google/callback', async (req, res) => {
 
   oauth2Client.setCredentials(tokens);
 
-   gmail = google.gmail({
-    version: 'v1',
-    auth: oauth2Client
-  })
+
   // req.flash("success","sign up successful");
   // res.json({
   //   success:true,
