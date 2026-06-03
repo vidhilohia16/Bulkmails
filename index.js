@@ -246,7 +246,7 @@ const message = parts.join("\n");
     .replace(/\//g, '_')
     .replace(/=+$/, '')
 
-    if (!undertokens) {
+    if (!usertokens) {
   return res.status(401).json({
     message: "Session expired. Please log in again."
   });
