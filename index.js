@@ -124,12 +124,14 @@ app.post(
   ]),
 
  async (req, res) => {
-    if (!gmail) {
+    if (!undertokens) {
     return res.status(401).json({
       success: false,
       message: "Session expired. Please log in again."
     });
   }
+  oauth2Client.setCredentials(usertokens);
+const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
   name=req.body.name;
      emailid=req.body.emailid;
    mailBody=req.body.mailBody;
@@ -238,7 +240,7 @@ const message = parts.join("\n");
     .replace(/\//g, '_')
     .replace(/=+$/, '')
 
-    if (!gmail) {
+    if (!undertokens) {
   return res.status(401).json({
     message: "Session expired. Please log in again."
   });
