@@ -7,7 +7,11 @@ const { google } = require('googleapis')
 const session = require("express-session");
 const flash = require("connect-flash");
 const nodemailer = require("nodemailer");
-const { kv } = require("@vercel/kv");
+const { Redis } = require("@upstash/redis");
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN,
+});
 const boundary = "myboundary";
 const path=require("path");
 
@@ -90,7 +94,7 @@ app.get('/auth/google/callback', async (req, res) => {
   const code = req.query.code
 
   const { tokens } = await oauth2Client.getToken(code);
-    await kv.set("usertokens", tokens);
+    await redis.set("usertokens", JSON.stringify(tokens));
 
 
   oauth2Client.setCredentials(tokens);
@@ -124,7 +128,9 @@ app.post(
 
  async (req, res) => {
       
-const usertokens = await kv.get("usertokens");
+const stored = await redis.get("usertokens");
+const usertokens = JSON.parse(stored);
+
   if (!usertokens) {
     return res.status(401).json({
       success: false,
