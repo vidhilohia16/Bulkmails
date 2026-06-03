@@ -108,7 +108,7 @@ useEffect(() => {
     
     if(excelFile==null){
       showerrorfile(true);
-      window.scrollTo({top:150,behavior:"smooth"});
+      window.scrollTo({top:250,behavior:"smooth"});
     return;
     }
     if(!subject.trim()){
