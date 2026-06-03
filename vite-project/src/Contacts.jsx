@@ -10,9 +10,9 @@ import UploadFileIcon from '@mui/icons-material/UploadFile';
 import ReportProblemOutlinedIcon from '@mui/icons-material/ReportProblemOutlined';
 import {useState, useRef } from 'react';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfile,errorfile,intRef}){
+export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfile,errorfile}){
     // const [dragging,setDragging]=useState(setDragging(false));
-    // const intRef=useRef();
+    const intRef=useRef();
     const [fileName,setFileName]=useState("");
     const handleFile=(file)=>{
         if(file){
