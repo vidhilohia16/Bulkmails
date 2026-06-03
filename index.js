@@ -169,7 +169,10 @@ if (otherdocs!=null) {
   // fileContent2 = fs.readFileSync(filePath2).toString("base64");
   fileContent2 = otherdocs.buffer.toString("base64");
 }
-
+  res.json({
+    success:true,
+    message:"Mails sent successfully"
+  })
 for(let i=0;i<data.length;i++){
 let personalizedBody = mailBody;
 
@@ -274,10 +277,7 @@ try {
 }
 
   // res.redirect("http://localhost:5173?state=success");
-  res.json({
-    success:true,
-    message:"Mails sent successfully"
-  })
+
 // res.redirect("/auth/google");
   });
  
