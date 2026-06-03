@@ -1,14 +1,14 @@
 import Box from '@mui/material/Box';
 import { useState,useRef } from 'react';
+import {forwardRef} from "react";
 import './Content.css';
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import Typography from '@mui/material/Typography';
 import ReportProblemOutlinedIcon from '@mui/icons-material/ReportProblemOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
-export default function Content({subject,emailid,mailBody,setMailBody,setEmail,setSubject,name,setName,errorsubject,errormail,showerrormail,showerrorsubject}){
-   const subjectRef=useRef();
-  const mailRef=useRef();
+ const Content=forwardRef(({subject,emailid,mailBody,setMailBody,setEmail,setSubject,name,setName,errorsubject,errormail,showerrormail,showerrorsubject},subjectRef)=>{
+   
 
 
     // const [email,setEmail]=useState("");
@@ -135,4 +135,5 @@ return (
 </Box>
 
 )
-}
+})
+export default Content

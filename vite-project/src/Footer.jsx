@@ -29,7 +29,7 @@ export default function Footer() {
           <Typography sx={{ color: "#b4b4ba", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             CONTACT
           </Typography>
-          <Box sx={{display:"flex"}}><EmailOutlinedIcon fontSize="small" sx={{color:"#6b6b9a",mr:1}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@email.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px",  }}>vidhilohia16@email.com</Link></Box>
+          <Box sx={{display:"flex"}}><EmailOutlinedIcon fontSize="small" sx={{color:"#6b6b9a",mr:1}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@gmail.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px",  }}>vidhilohia16@gmail.com</Link></Box>
           <Box sx={{display:"flex"}}><LinkedInIcon fontSize="small" sx={{color:"#6b6b9a",mr:1}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
         </Box>
 

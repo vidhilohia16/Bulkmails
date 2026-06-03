@@ -32,7 +32,7 @@ import { useState,useEffect,useRef } from 'react'
 
 const [alertType, setAlert] = useState(null);
 const [isloading, setloading] = useState(false);
-
+const subjectRef=useRef();
 
 const [recipients,setRecipients]=useState("0 Recipients")
   const [excelFile, setExcelFile] = useState(null);
@@ -112,7 +112,7 @@ useEffect(() => {
     }
     if(!subject.trim()){
       showerrorsubject(true);
-      window.scrollTo({ top: 550, behavior: "smooth" });
+      subjectRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
     }
     if(!mailBody.trim()){
@@ -234,6 +234,7 @@ if (response.status === 400) {
         subject={subject}
         setSubject={setSubject}
         mailBody={mailBody}
+        subjectRef={subjectRef}
         
         setMailBody={setMailBody}
         showerrormail={showerrormail} errormail={errormail} showerrorsubject={showerrorsubject} errorsubject={errorsubject}
