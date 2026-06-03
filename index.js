@@ -6,6 +6,7 @@ const { google } = require('googleapis')
 const session = require("express-session");
 const flash = require("connect-flash");
 const nodemailer = require("nodemailer");
+const { kv } = require("@vercel/kv");
 const boundary = "myboundary";
 const path=require("path");
 
@@ -89,7 +90,8 @@ app.get('/auth/google/callback', async (req, res) => {
   const code = req.query.code
 
   const { tokens } = await oauth2Client.getToken(code);
-  usertokens=tokens;
+    await kv.set("usertokens", JSON.stringify(tokens));
+
 
   oauth2Client.setCredentials(tokens);
 
@@ -124,12 +126,16 @@ app.post(
   ]),
 
  async (req, res) => {
-    if (!undertokens) {
+      const stored = await kv.get("usertokens");
+
+  if (!stored) {
     return res.status(401).json({
       success: false,
       message: "Session expired. Please log in again."
     });
   }
+
+  const usertokens = JSON.parse(stored);
   oauth2Client.setCredentials(usertokens);
 const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
   name=req.body.name;
