@@ -166,7 +166,7 @@ if (response.status === 400) {
   if (data.success) {
     setloading(false);
     setAlert("mail");                // ✅ show success
-    window.scrollTo({ top: 0, behavior: "smooth" });
+   document.getElementById("top").scrollIntoView({behavior:"smooth"});
 
   }
   }
