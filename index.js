@@ -38,7 +38,6 @@ let subject;
 let name;
 let resume;
 let excelfile;
-let usertokens=null;
 let otherdocs;
 let gmail;
 
@@ -90,7 +89,7 @@ app.get('/auth/google/callback', async (req, res) => {
   const code = req.query.code
 
   const { tokens } = await oauth2Client.getToken(code);
-    await kv.set("usertokens", JSON.stringify(tokens));
+    await kv.set("usertokens", tokens);
 
 
   oauth2Client.setCredentials(tokens);
@@ -126,16 +125,15 @@ app.post(
   ]),
 
  async (req, res) => {
-      const stored = await kv.get("usertokens");
-
-  if (!stored) {
+      
+const usertokens = await kv.get("usertokens");
+  if (!usertokens) {
     return res.status(401).json({
       success: false,
       message: "Session expired. Please log in again."
     });
   }
 
-  const usertokens = JSON.parse(stored);
   oauth2Client.setCredentials(usertokens);
 const gmail = google.gmail({ version: 'v1', auth: oauth2Client });
   name=req.body.name;
@@ -246,11 +244,11 @@ const message = parts.join("\n");
     .replace(/\//g, '_')
     .replace(/=+$/, '')
 
-    if (!usertokens) {
-  return res.status(401).json({
-    message: "Session expired. Please log in again."
-  });
-}
+//     if (!usertokens) {
+//   return res.status(401).json({
+//     message: "Session expired. Please log in again."
+//   });
+// }
 try {
   await gmail.users.messages.send( {
     userId: 'me',
