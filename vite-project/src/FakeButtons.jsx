@@ -14,7 +14,7 @@ export default function FakeButtons(){
           <Box sx={{display:"flex",width:{xs:"100%",md:"600px"},gap:"0px",alignItems:"center"}}>
             
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
-            backgroundColor: "#1f9cc6",
+            backgroundColor: "#58585d",
             fontSize:{xs:"10px",md:"14px"},
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
