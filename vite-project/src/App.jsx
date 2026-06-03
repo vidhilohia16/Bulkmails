@@ -27,7 +27,7 @@ import { useState,useEffect,useRef } from 'react'
     const [errormail,showerrormail]=useState(false);
   
     const [errorfile,showerrorfile]=useState(false);
-    
+    const intRef=useRef();
      const [errorsubject,showerrorsubject]=useState(false);
 
 const [alertType, setAlert] = useState(null);
@@ -108,7 +108,7 @@ useEffect(() => {
     
     if(excelFile==null){
       showerrorfile(true);
-        window.scrollTo({ top: 10, behavior: "smooth" });
+        intRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
     return;
     }
     if(!subject.trim()){
@@ -226,7 +226,7 @@ if (response.status === 400) {
   
   <TextUnderHeading />
   <FakeButtons />
-   <Contacts setExcelFile={setExcelFile} alertType={alertType} setAlert={setAlert}  showerrorfile={showerrorfile} errorfile={errorfile}/>
+   <Contacts setExcelFile={setExcelFile} alertType={alertType} setAlert={setAlert}  showerrorfile={showerrorfile} errorfile={errorfile} intRef={intRef}/>
    <Content
    name={name}
    setName={setName}
