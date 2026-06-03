@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import ReportProblemOutlinedIcon from '@mui/icons-material/ReportProblemOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
- const Content=forwardRef(({subject,emailid,mailBody,setMailBody,setEmail,setSubject,name,setName,errorsubject,errormail,showerrormail,showerrorsubject},subjectRef)=>{
+ const Content=({subject,emailid,mailBody,setMailBody,setEmail,setSubject,name,setName,errorsubject,errormail,showerrormail,showerrorsubject,subjectRef,mailRef})=>{
    
 
 
@@ -135,5 +135,5 @@ return (
 </Box>
 
 )
-})
+}
 export default Content
