@@ -120,7 +120,6 @@ app.post(
 
  async (req, res) => {
 const usertokens = await kv.get("usertokens");
-const usertokens = JSON.parse(stored);
 
   if (!usertokens) {
     return res.status(401).json({
