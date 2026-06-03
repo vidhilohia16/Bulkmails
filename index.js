@@ -42,12 +42,7 @@ let otherdocs;
 
 
 require('dotenv').config()
-
-const { Redis } = require("@upstash/redis");
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL,
-  token: process.env.UPSTASH_REDIS_REST_TOKEN,
-});
+const { kv } = require("@vercel/kv");
 // const path = require("path");
 
 // const fileURLToPath= require("url");
@@ -91,7 +86,7 @@ app.get('/auth/google/callback', async (req, res) => {
   const code = req.query.code
 
   const { tokens } = await oauth2Client.getToken(code);
-    await redis.set("usertokens", JSON.stringify(tokens));
+   await kv.set("usertokens", tokens);
 
 
   oauth2Client.setCredentials(tokens);
@@ -124,8 +119,7 @@ app.post(
   ]),
 
  async (req, res) => {
-      
-const stored = await redis.get("usertokens");
+const usertokens = await kv.get("usertokens");
 const usertokens = JSON.parse(stored);
 
   if (!usertokens) {
