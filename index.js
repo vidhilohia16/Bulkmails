@@ -7,11 +7,6 @@ const { google } = require('googleapis')
 const session = require("express-session");
 const flash = require("connect-flash");
 const nodemailer = require("nodemailer");
-const { Redis } = require("@upstash/redis");
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL,
-  token: process.env.UPSTASH_REDIS_REST_TOKEN,
-});
 const boundary = "myboundary";
 const path=require("path");
 
@@ -48,9 +43,11 @@ let otherdocs;
 
 require('dotenv').config()
 
-
-
-
+const { Redis } = require("@upstash/redis");
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN,
+});
 // const path = require("path");
 
 // const fileURLToPath= require("url");
