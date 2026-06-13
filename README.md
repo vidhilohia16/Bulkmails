@@ -41,7 +41,7 @@ cd vite-project
 npm install
 
 ### Run Locally
-# Backend (from root)
+## Backend (from root)
 node index.js
 
 ## Frontend (from vite-project folder)
