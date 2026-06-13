@@ -30,13 +30,13 @@ to 500+ contacts using Gmail API with Google OAuth2 authentication.
 
 ### Installation
 
-# Clone the repo
+## Clone the repo
 git clone https://github.com/vidhilohia16/Bulkmails
 
-# Install backend dependencies (root folder)
+## Install backend dependencies (root folder)
 npm install
 
-# Install frontend dependencies
+## Install frontend dependencies
 cd vite-project
 npm install
 
@@ -44,7 +44,7 @@ npm install
 # Backend (from root)
 node index.js
 
-# Frontend (from vite-project folder)
+## Frontend (from vite-project folder)
 cd vite-project
 npm run dev
 
