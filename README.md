@@ -28,31 +28,25 @@ to 500+ contacts using Gmail API with Google OAuth2 authentication.
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js v18+
-- Google Cloud Console project with Gmail API enabled
-- Upstash Redis account
-
 ### Installation
 
 # Clone the repo
 git clone https://github.com/vidhilohia16/Bulkmails
 
-# Install frontend
-cd client
+# Install backend dependencies (root folder)
 npm install
 
-# Install backend
-cd server
+# Install frontend dependencies
+cd vite-project
 npm install
 
 ### Run Locally
-# Backend
-cd server && npm start
+# Backend (from root)
+node index.js
 
-# Frontend
-cd client && npm start
-
+# Frontend (from vite-project folder)
+cd vite-project
+npm run dev
 
 ## 👩‍💻 Author
 Vidhi Lohia
