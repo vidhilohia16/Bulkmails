@@ -245,8 +245,8 @@ if (response.status === 400) {
   setOtherdocs={setOtherdocs} />
   
   <Box sx={{
-  background: "linear-gradient(135deg, rgba(197, 198, 133, 0.97) 0%, rgba(207, 221, 84, 0.9) 100%)",
-  border: "0.5px solid rgba(216, 166, 106, 0.97)",
+  background: "rgba(234,179,8,0.08)",
+  border: "0.5px solid rgba(234,179,8,0.3)",
   borderRadius: "14px",
   padding: "12px 16px",
   display: "flex",
@@ -275,7 +275,7 @@ if (response.status === 400) {
   <Button variant="outlined"  onClick={ClickButton}
    sx={{
       borderColor: isloading ? "rgba(237, 189, 67, 0.6)" : "white",
-    color: isloading ? "rgba(222, 173, 49, 0.6)" : "#fff",
+    color: isloading ? "#0a0a0f" : "#fff",
     borderColor:"white",
     color: "#fff",
     flexShrink:0,
@@ -294,7 +294,7 @@ if (response.status === 400) {
       bottom: 0,
       left: 0,
       height: "3px",
-      background: "#facc15",
+      background: "#27272d",
       borderRadius: "0 0 14px 14px",
       animation: "progressAnim 5s ease forwards",
       "@keyframes progressAnim": {

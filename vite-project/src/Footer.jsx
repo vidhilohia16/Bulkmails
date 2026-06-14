@@ -38,13 +38,13 @@ export default function Footer() {
           <Typography sx={{ color: "white", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#facc15"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", }}>Privacy policy</Link></Box>
+          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#facc15"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "white", fontSize: "13px", }}>Privacy policy</Link></Box>
         </Box>
 
       </Box>
 
       {/* Bottom bar */}
-      <Box sx={{ borderTop: "1px solid #b3cbe8", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
+      <Box sx={{ borderTop: "1px solid #e6e9ed", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
         <Typography sx={{ color: "white", fontSize: "12px" }}>© 2026 blastmail. All rights reserved.</Typography>
         <Typography sx={{ color: "white", fontSize: "12px" }}>Made with ♥ by Vidhi</Typography>
       </Box>
