@@ -33,6 +33,7 @@ useEffect(() => {
     sx={{
       fontSize: { xs: "1.7rem", md: "3.75rem" },
       fontWeight: 700,
+      fontFamily: "'Playfair Display', Georgia, serif", 
       textAlign:"center",
       lineHeight: 1.2,
     }}
@@ -54,6 +55,7 @@ useEffect(() => {
       sx={{
         fontSize: { xs: "1.8rem", md: "3.75rem" },
         fontWeight: 700,
+        fontFamily: "'Playfair Display', Georgia, serif",
         lineHeight: 1.2,
       }}
     >
@@ -64,6 +66,7 @@ useEffect(() => {
       sx={{
         fontSize: { xs: "1.8rem", md: "3.75rem" },
         fontStyle: "italic",
+        fontFamily: "'Playfair Display', Georgia, serif",
         fontWeight: 700,
         color: "#facc15 ",
         lineHeight: 1.2,
@@ -76,6 +79,7 @@ useEffect(() => {
       sx={{
         fontSize: { xs: "1.8rem", md: "3.75rem" },
         fontWeight: 700,
+        fontFamily: "'Playfair Display', Georgia, serif",
         lineHeight: 1.2,
       }}
     >

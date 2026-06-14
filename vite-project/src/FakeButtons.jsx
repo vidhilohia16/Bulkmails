@@ -14,7 +14,8 @@ export default function FakeButtons(){
           <Box sx={{display:"flex",width:{xs:"100%",md:"600px"},gap:"0px",alignItems:"center"}}>
             
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
-            backgroundColor: "#58585d",
+            backgroundColor: "rgba(255,255,255,0.07)",
+            border: "0.5px solid rgba(255,255,255,0.18)",
             fontSize:{xs:"10px",md:"14px"},
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
@@ -32,10 +33,11 @@ export default function FakeButtons(){
     }}
   />
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
-            backgroundColor: "#58585d",
+            backgroundColor: "rgba(255,255,255,0.07)",
             color: "#b4b4ba",
             opacity: 1,
             fontSize:{xs:"10px",md:"14px"},
+            border: "0.5px solid rgba(255,255,255,0.18)",
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
           },}}><EditNoteIcon></EditNoteIcon> Compose </Button>
@@ -52,8 +54,9 @@ export default function FakeButtons(){
     }}
   />
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
-            backgroundColor: "#58585d",
+            backgroundColor: "rgba(255,255,255,0.07)",
             color: "#b4b4ba",
+            border: "0.5px solid rgba(255,255,255,0.18)",
             fontSize:{xs:"10px",md:"14px"},
             padding:{xs:"4px 8px",md:"6px 16px"},
             flexShrink:0,
@@ -71,7 +74,8 @@ export default function FakeButtons(){
     }}
   />
         <Button variant="contained" disabled sx={{borderRadius: "999px","&.Mui-disabled": {
-            backgroundColor: "#58585d",
+            backgroundColor: "rgba(255,255,255,0.07)",
+            border: "0.5px solid rgba(255,255,255,0.18)",
             color: "#b4b4ba",
             opacity: 1,
             fontSize:{xs:"10px",md:"14px"},

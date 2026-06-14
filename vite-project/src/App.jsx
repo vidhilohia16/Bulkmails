@@ -217,7 +217,7 @@ if (response.status === 400) {
   
 </Box>
 
-  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(234,179,8,0.15)",borderColor:"#rgba(234,179,8,0.5)",
+  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(234,179,8,0.15)",border:"0.5px solid rgba(234,179,8,0.5)",
     borderRadius:"40px",display:"flex",justifyContent:"center",
     margin: "0 auto",mt:"65px",mb:"10px"}}><BoltOutlinedIcon fontSize="small" 
     sx={{color:"#facc15"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#facc15"}}>Bulk email,simplified</Typography></Button>
@@ -284,7 +284,7 @@ if (response.status === 400) {
     padding: "12px 20px",
     borderRadius: "10px",
     textTransform: "none",
-    '&:hover': { background: "#363638" }
+    '&:hover': { background: "#141415" }
   }}>
     {isloading?<><CircularProgress size={20} sx={{ color: "#facc15 ", mr: 1 }} /> <Typography>Sending emails…</Typography></>:<><RocketLaunchIcon sx={{mr:1}}></RocketLaunchIcon><Typography sx={{fontSize:"20px",fontWeight: 500,}}>Blast emails</Typography></>}
   </Button>
