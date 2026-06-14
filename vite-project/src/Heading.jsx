@@ -66,7 +66,7 @@ useEffect(() => {
       sx={{
         fontSize: { xs: "1.8rem", md: "3.75rem" },
         fontStyle: "italic",
-        fontFamily: "'Playfair Display', Georgia, serif",
+        
         fontWeight: 700,
         color: "#facc15 ",
         lineHeight: 1.2,
