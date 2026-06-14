@@ -109,7 +109,7 @@ return (
   className="form-control custom"
   placeholder="Enter message.."
   rows="5"
-  style={{backgroundColor:"black",border:"1px dashed #facc15 ",color:"white"}}
+  style={{backgroundColor:"rgba(255,255,255,0.04)",border:"1px dashed #facc15 ",color:"white"}}
 />
  {errormail?<Box sx={{display:"flex",gap:"4px"}}><InfoOutlinedIcon fontSize='small' sx={{color:"red",mt:"2px"}}></InfoOutlinedIcon><Typography variant='body1' sx={{color:"red",mt:"2px"}}>Mail Body is required</Typography></Box>:null}
   </div>

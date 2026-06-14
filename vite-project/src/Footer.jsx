@@ -16,37 +16,37 @@ export default function Footer() {
           <Typography sx={{ color: "white", fontWeight: 500, fontSize: "16px", mb: 1 }}>
             <ForwardToInboxOutlinedIcon sx={{color:"#facc15 "}}></ForwardToInboxOutlinedIcon> blastmail
           </Typography>
-          <Typography sx={{ color: "#facc15", fontSize: "13px" }}>
+          <Typography sx={{ color: "#eceae2", fontSize: "13px" }}>
             Bulk email, simplified.
           </Typography>
-          <Typography sx={{ color: "#facc15", fontSize: "13px" }}>
+          <Typography sx={{ color: "#eceae2", fontSize: "13px" }}>
             Write once,Hit 500 inboxes
           </Typography>
         </Box>
 
         {/* Contact */}
         <Box>
-          <Typography sx={{ color: "#facc15", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
+          <Typography sx={{ color: "#eceae2", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             CONTACT
           </Typography>
-          <Box sx={{display:"flex"}}><EmailOutlinedIcon fontSize="small" sx={{color:"#6b6b9a",mr:1}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@gmail.com" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px",  }}>vidhilohia16@gmail.com</Link></Box>
-          <Box sx={{display:"flex"}}><LinkedInIcon fontSize="small" sx={{color:"#6b6b9a",mr:1}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
+          <Box sx={{display:"flex"}}><EmailOutlinedIcon fontSize="small" sx={{color:"#facc15",mr:1}}></EmailOutlinedIcon><Link href="mailto:vidhilohia16@gmail.com" sx={{ textDecoration:"none",display: "block", color: "white", fontSize: "13px",  }}>vidhilohia16@gmail.com</Link></Box>
+          <Box sx={{display:"flex"}}><LinkedInIcon fontSize="small" sx={{color:"#facc15",mr:1}}></LinkedInIcon><Link href="https://www.linkedin.com/in/vidhi-lohia-303257395/" sx={{ textDecoration:"none",display: "block", color: "white", fontSize: "13px", mb: 1 }}>LinkedIn</Link></Box>
         </Box>
 
         {/* Legal */}
         <Box>
-          <Typography sx={{ color: "#facc15", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
+          <Typography sx={{ color: "white", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#6b6b9a"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", }}>Privacy policy</Link></Box>
+          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#facc15"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "#6b6b9a", fontSize: "13px", }}>Privacy policy</Link></Box>
         </Box>
 
       </Box>
 
       {/* Bottom bar */}
-      <Box sx={{ borderTop: "1px solid #facc15", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
-        <Typography sx={{ color: "#facc15", fontSize: "12px" }}>© 2026 blastmail. All rights reserved.</Typography>
-        <Typography sx={{ color: "#facc15", fontSize: "12px" }}>Made with ♥ by Vidhi</Typography>
+      <Box sx={{ borderTop: "1px solid #b3cbe8", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
+        <Typography sx={{ color: "white", fontSize: "12px" }}>© 2026 blastmail. All rights reserved.</Typography>
+        <Typography sx={{ color: "white", fontSize: "12px" }}>Made with ♥ by Vidhi</Typography>
       </Box>
     </Box>
   )

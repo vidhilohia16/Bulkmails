@@ -2,31 +2,27 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import {useState} from 'react'
 export default function Heading(){
+  const [count, setCount] = useState(0);
+
+useEffect(() => {
+  const target = 500, duration = 1800;
+  let start = null;
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+  const animate = (ts) => {
+    if (!start) start = ts;
+    const progress = Math.min((ts - start) / duration, 1);
+    setCount(Math.round(easeOut(progress) * target));
+    if (progress < 1) requestAnimationFrame(animate);
+  };
+
+  const id = setTimeout(() => requestAnimationFrame(animate), 300);
+  return () => clearTimeout(id);
+}, []);
     return (
-//         <Box >
-//         <Typography  sx={{textAlign:"center",fontWeight:600,fontSize: { xs: "2rem", md: "3.75rem" }}}>
-//             Stop applying one by one. 
-//         </Typography>
-//         <br/>
-//         <Box sx={{display: "flex",justifyContent:"center", alignItems:"center", // 👈 add this
-//   textAlign: "center"}}>
-//         <Typography  sx={{fontWeight:600,fontSize: { xs: "2rem", md: "3.75rem" },}}>
-//             Write once. 
-//         </Typography>
-//         <Typography  sx={{ 
-//             fontStyle: "italic" ,
-//             fontWeight:600,
-//             fontSize: { xs: "2rem", md: "3.75rem" },
-//             color:"#a78bfa"}}>
-//             Hit 500 inboxes. 
-//         </Typography>
-//         <Typography sx={{fontWeight:"bold",fontSize: { xs: "2rem", md: "3.75rem" },}}>
-//             Get Hired 
-//         </Typography>
-//         </Box>
-//         </Box>
-<Box  sx={{
+        <Box  sx={{
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -73,7 +69,7 @@ export default function Heading(){
         lineHeight: 1.2,
       }}
     >
-      Hit 500 inboxes.
+      Hit {count}+ inboxes.
     </Typography>
 
     <Typography
