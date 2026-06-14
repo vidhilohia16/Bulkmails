@@ -48,6 +48,7 @@ export default function ButtonAppBar({ alertType, setAlert }) {
             mr: { xs: 0, md: "20px" },
             color:"white",
             width:"120px",
+            borderColor:"#facc15",
             height:"50px",
             mt:2,
             textTransform:"none",

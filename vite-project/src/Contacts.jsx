@@ -36,9 +36,9 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
   width: 22,
   height: 22,
   borderRadius: "50%",
-  background: "rgba(124,58,237,0.25)",
-  border: "0.5px solid rgba(124,58,237,0.45)",
-  color: "#facc15 ",
+  background: "#facc15",
+  border: "0.5px solid black",
+  color: "black ",
   fontSize: 13,
   fontWeight: 500,
   display: "flex",
@@ -81,7 +81,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
-            sx={{border:"1px dashed #facc15 ",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
+            sx={{border:"1px dashed #facc15 ",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"black"
       }}>
          
            

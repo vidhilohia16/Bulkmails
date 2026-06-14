@@ -36,9 +36,9 @@ export default function Attach({setResume,setOtherdocs}){
   width: 22,
   height: 22,
   borderRadius: "50%",
-  background: "rgba(124,58,237,0.25)",
-  border: "0.5px solid rgba(124,58,237,0.45)",
-  color: "#facc15 ",
+  background: "#facc15",
+  border: "0.5px solid black",
+  color: "black ",
   fontSize: 13,
   fontWeight: 500,
   display: "flex",
@@ -58,7 +58,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer1(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #facc15 ",width:"100%",padding:"24px 16px",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #facc15 ",width:"100%",padding:"24px 16px",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"black"
       }}>
         
           <input style={{display:"none"}} ref={attachRef} onChange={(e)=>{
@@ -82,7 +82,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer2(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #facc15 ",mx:"auto",padding:"24px 16px",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #facc15 ",mx:"auto",padding:"24px 16px",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"black"
       }}>
         
           <input style={{display:"none"}} ref={attachmoreRef} onChange={(e)=>{

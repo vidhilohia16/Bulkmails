@@ -217,10 +217,10 @@ if (response.status === 400) {
   
 </Box>
 
-  <Button variant="outlined" disabled sx={{backgroundColor:"rgba(124,58,237,0.18)",borderColor:"rgba(124,58,237,0.8)",
+  <Button variant="outlined" disabled sx={{backgroundColor:"linear-gradient(90deg, #facc15, #f59e0b)",borderColor:"#dfca76",
     borderRadius:"40px",display:"flex",justifyContent:"center",
     margin: "0 auto",mt:"65px",mb:"10px"}}><BoltOutlinedIcon fontSize="small" 
-    sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#c4b5fd"}}>Bulk email,simplified</Typography></Button>
+    sx={{color:"#c4b5fd"}}></BoltOutlinedIcon><Typography sx={{textTransform:"none",color:"#facc15"}}>Bulk email,simplified</Typography></Button>
   
   <Heading />
   

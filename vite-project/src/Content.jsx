@@ -68,9 +68,9 @@ return (
   width: 22,
   height: 22,
   borderRadius: "50%",
-  background: "rgba(124,58,237,0.25)",
-  border: "0.5px solid rgba(124,58,237,0.45)",
-  color: "#facc15 ",
+  background: "#facc15",
+  border: "0.5px solid black",
+  color: "black ",
   fontSize: 13,
   fontWeight: 500,
   display: "flex",
@@ -86,17 +86,17 @@ return (
 <form className="row g-3" action="http://localhost:3000/data" method="post">
   <div class="col-md-6">
     <label htmlFor="inputName" className="form-label">Name</label>
-    <input type="text" name="name" spellCheck={false} value={name} onChange={ChangeName} className="form-control custom" placeholder="e.g.Vidhi Lohia"id="inputName" style={{backgroundColor:"rgba(124,58,237,0.05)",border:"1px dashed #facc15 ",color:"white"}}/>
+    <input type="text" name="name" spellCheck={false} value={name} onChange={ChangeName} className="form-control custom" placeholder="e.g.Vidhi Lohia"id="inputName" style={{backgroundColor:"black",border:"1px dashed #facc15 ",color:"white"}}/>
   </div>
   
   <div className="col-md-6">
     <label htmlFor="inputEmail4" className="form-label" >Your Email</label>
-    <input type="text" name="emailid" spellCheck={false} value={emailid} className="form-control custom" onChange={ChangeEmail} placeholder="e.g. vidhilohia@gmail.com" id="inputEmail4" style={{backgroundColor:"rgba(124,58,237,0.05)",border:"1px dashed #facc15 ",color:"white"}}/>
+    <input type="text" name="emailid" spellCheck={false} value={emailid} className="form-control custom" onChange={ChangeEmail} placeholder="e.g. vidhilohia@gmail.com" id="inputEmail4" style={{backgroundColor:"black",border:"1px dashed #facc15 ",color:"white"}}/>
   </div>
   
   <div class="col-12">
     <label htmlFor="inputSubject" className="form-label">Subject Line</label>
-    <input type="text"  ref={subjectRef} name="subject" spellCheck={false} value={subject} onChange={ChangeSubject} className="form-control custom" placeholder="e.g.Application for the role of Software Engineer"id="inputSubject" style={{backgroundColor:"rgba(124,58,237,0.05)",border:"1px dashed #facc15 ",color:"white"}}/>
+    <input type="text"  ref={subjectRef} name="subject" spellCheck={false} value={subject} onChange={ChangeSubject} className="form-control custom" placeholder="e.g.Application for the role of Software Engineer"id="inputSubject" style={{backgroundColor:"black",border:"1px dashed #facc15 ",color:"white"}}/>
     {errorsubject?<Box sx={{display:"flex",gap:"4px"}} ><InfoOutlinedIcon fontSize='small' sx={{color:"red",mt:"2px"}}></InfoOutlinedIcon><Typography variant='body1' sx={{color:"red",mt:"2px"}}>Subject line is required</Typography></Box>:null}
   </div>
   <div class="col-12">
@@ -109,7 +109,7 @@ return (
   className="form-control custom"
   placeholder="Enter message.."
   rows="5"
-  style={{backgroundColor:"rgba(124,58,237,0.05)",border:"1px dashed #facc15 ",color:"white"}}
+  style={{backgroundColor:"black",border:"1px dashed #facc15 ",color:"white"}}
 />
  {errormail?<Box sx={{display:"flex",gap:"4px"}}><InfoOutlinedIcon fontSize='small' sx={{color:"red",mt:"2px"}}></InfoOutlinedIcon><Typography variant='body1' sx={{color:"red",mt:"2px"}}>Mail Body is required</Typography></Box>:null}
   </div>
