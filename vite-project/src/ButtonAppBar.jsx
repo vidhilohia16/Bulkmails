@@ -39,7 +39,7 @@ export default function ButtonAppBar({ alertType, setAlert }) {
       }}>
         <Toolbar>
           <ForwardToInboxOutlinedIcon  sx={{color:"#facc15 ",mt:2,ml: { xs: 0, md: "20px" },fontSize:"38px"}}></ForwardToInboxOutlinedIcon>
-          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: "2px", md: "5px" }}}>blastmail </Typography>
+          <Typography variant="h5" sx={{textTransform:"none",mt:2,ml: { xs: "2px", md: "5px" }}}>bulkmail </Typography>
           
           <Box sx={{
             ml: "auto", display: "flex", gap: 2
