@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import {useState} from 'react'
+import {useEffect,useState} from 'react'
 export default function Heading(){
   const [count, setCount] = useState(0);
 
