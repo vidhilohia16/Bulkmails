@@ -38,7 +38,7 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
   borderRadius: "50%",
   background: "rgba(124,58,237,0.25)",
   border: "0.5px solid rgba(124,58,237,0.45)",
-  color: "#a78bfa",
+  color: "#facc15 ",
   fontSize: 13,
   fontWeight: 500,
   display: "flex",
@@ -81,13 +81,13 @@ export default  function Contacts({ setExcelFile,alertType, setAlert,showerrorfi
                 return; }
             // setDragging(false)
             handleFile(e.dataTransfer.files[0]);  }}
-            sx={{border:"1px dashed #a78bfa",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
+            sx={{border:"1px dashed #facc15 ",width:"100%",maxWidth:"766px",height:"140px",mx:"auto",mt:"10px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
          
            
              
         <Box sx={{display:"flex",alignItems:"center",flexDirection:"column"}}>
-        <UploadFileIcon  sx={{ml:1,color:"#a78bfa",fontSize:"38px",mb:1}}>
+        <UploadFileIcon  sx={{ml:1,color:"#facc15 ",fontSize:"38px",mb:1}}>
         </UploadFileIcon>
          <Box sx={{ ml: 1 }}>
         <Typography variant="h6"  sx={{textTransform: "none",color:"white"}}>{fileName||"Drop your Excel or Csv here"}</Typography>

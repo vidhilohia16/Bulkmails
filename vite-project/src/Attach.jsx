@@ -38,7 +38,7 @@ export default function Attach({setResume,setOtherdocs}){
   borderRadius: "50%",
   background: "rgba(124,58,237,0.25)",
   border: "0.5px solid rgba(124,58,237,0.45)",
-  color: "#a78bfa",
+  color: "#facc15 ",
   fontSize: 13,
   fontWeight: 500,
   display: "flex",
@@ -58,7 +58,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer1(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",width:"100%",padding:"24px 16px",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #facc15 ",width:"100%",padding:"24px 16px",maxWidth:"375px",mx:"auto",height:"auto",mt:"5px", backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachRef} onChange={(e)=>{
@@ -66,7 +66,7 @@ export default function Attach({setResume,setOtherdocs}){
           }} type="file" name="resume"></input>
         
         <Box sx={{display:"flex",alignItems:"center",flexDirection:"column"}}>
-        <PictureAsPdfOutlinedIcon sx={{ml:1,color:"#a78bfa"}}>
+        <PictureAsPdfOutlinedIcon sx={{ml:1,color:"#facc15 "}}>
 
         </PictureAsPdfOutlinedIcon>
          <Box sx={{ ml: 1 }}>
@@ -82,7 +82,7 @@ export default function Attach({setResume,setOtherdocs}){
             }} onDrop={(e)=>{
               e.preventDefault();
               handleTransfer2(e.dataTransfer.files[0])
-            }} sx={{border:"1px dashed #a78bfa",mx:"auto",padding:"24px 16px",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
+            }} sx={{border:"1px dashed #facc15 ",mx:"auto",padding:"24px 16px",width:"100%",maxWidth:"375px",height:"auto",mt:"5px",backgroundColor:"rgba(124,58,237,0.05)"
       }}>
         
           <input style={{display:"none"}} ref={attachmoreRef} onChange={(e)=>{
@@ -90,7 +90,7 @@ export default function Attach({setResume,setOtherdocs}){
           }} type="file" name="otherdocs"></input>
         
         <Box sx={{display:"flex",alignItems:"center",flexDirection:"column"}}>
-        <FileCopyOutlinedIcon sx={{ml:1,color:"#a78bfa"}}>
+        <FileCopyOutlinedIcon sx={{ml:1,color:"#facc15 "}}>
         </FileCopyOutlinedIcon>
          <Box sx={{ ml: 1 }}>
         <Typography variant="h6"  sx={{textTransform: "none",color:"white"}}>{fileName2||"Other documents"}</Typography>

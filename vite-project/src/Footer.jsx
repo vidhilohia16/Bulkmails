@@ -14,7 +14,7 @@ export default function Footer() {
         {/* Logo */}
         <Box>
           <Typography sx={{ color: "white", fontWeight: 500, fontSize: "16px", mb: 1 }}>
-            <ForwardToInboxOutlinedIcon sx={{color:"#a78bfa"}}></ForwardToInboxOutlinedIcon> blastmail
+            <ForwardToInboxOutlinedIcon sx={{color:"#facc15 "}}></ForwardToInboxOutlinedIcon> blastmail
           </Typography>
           <Typography sx={{ color: "#6b6b9a", fontSize: "13px" }}>
             Bulk email, simplified.

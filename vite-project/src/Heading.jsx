@@ -69,7 +69,7 @@ export default function Heading(){
         fontSize: { xs: "1.8rem", md: "3.75rem" },
         fontStyle: "italic",
         fontWeight: 700,
-        color: "#a78bfa",
+        color: "#facc15 ",
         lineHeight: 1.2,
       }}
     >

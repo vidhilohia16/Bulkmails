@@ -286,7 +286,7 @@ if (response.status === 400) {
     textTransform: "none",
     '&:hover': { background: "#363638" }
   }}>
-    {isloading?<><CircularProgress size={20} sx={{ color: "#a78bfa", mr: 1 }} /> <Typography>Sending emails…</Typography></>:<><RocketLaunchIcon sx={{mr:1}}></RocketLaunchIcon><Typography sx={{fontSize:"20px",fontWeight: 500,}}>Blast emails</Typography></>}
+    {isloading?<><CircularProgress size={20} sx={{ color: "#facc15 ", mr: 1 }} /> <Typography>Sending emails…</Typography></>:<><RocketLaunchIcon sx={{mr:1}}></RocketLaunchIcon><Typography sx={{fontSize:"20px",fontWeight: 500,}}>Blast emails</Typography></>}
   </Button>
    {isloading && (
     <Box sx={{
@@ -294,7 +294,7 @@ if (response.status === 400) {
       bottom: 0,
       left: 0,
       height: "3px",
-      background: "linear-gradient(90deg, #7c3aed, #1d9e75)",
+      background: "linear-gradient(90deg, #facc15, #f59e0b)",
       borderRadius: "0 0 14px 14px",
       animation: "progressAnim 5s ease forwards",
       "@keyframes progressAnim": {
