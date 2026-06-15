@@ -294,7 +294,7 @@ if (response.status === 400) {
       bottom: 0,
       left: 0,
       height: "3px",
-      background: "#27272d",
+      background: "#b09e41",
       borderRadius: "0 0 14px 14px",
       animation: "progressAnim 5s ease forwards",
       "@keyframes progressAnim": {

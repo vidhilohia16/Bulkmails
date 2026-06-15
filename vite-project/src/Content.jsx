@@ -128,6 +128,8 @@ return (
   
 </form>
 <Box sx={{backgroundColor:"#1e1d1d",width:"100%",mx:"auto",maxWidth:"766px",mt:3,height:"auto",borderRadius:"10px",p:1}}>
+    <Box sx={{display:"flex"}}><InfoOutlinedIcon fontSize='small' sx={{color:"#8c8585",mr:1,mt:"1px"}}></InfoOutlinedIcon><Typography sx={{color:"#8c8585"}}>Email address must match your login credentials</Typography></Box>
+
   <Box sx={{display:"flex"}}><InfoOutlinedIcon fontSize='small' sx={{color:"#8c8585",mr:1,mt:"1px"}}></InfoOutlinedIcon><Typography sx={{color:"#8c8585"}}>{`Use {{ }} in your subject or mail body to personalize each email — for example, {{HR_Name}} or {{Company}}`}</Typography></Box>
   <Box sx={{display:"flex"}}><ReportProblemOutlinedIcon fontSize='small' sx={{color:"#8c8585",mr:1,mt:"1px"}}></ReportProblemOutlinedIcon><Typography sx={{color:"#8c8585"}}>The name inside the braces must match your Excel column header exactly (case-sensitive).</Typography></Box>
 </Box>
