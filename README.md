@@ -4,7 +4,7 @@ A full-stack web application to send personalized bulk emails
 to 500+ contacts using Gmail API with Google OAuth2 authentication.
 
  Live: https://bulkmails-five.vercel.app
- Demo: [Watch here](https://www.dropbox.com/scl/fi/z5gywv20bliq3dsbycj1f/Bulkmails-Full-Stack-Web-Application.mp4?rlkey=c4y3y6fcrqi1pd1l9tyrm21o6&st=2irrd3bp&dl=0)
+ Demo: [Watch here](https://www.dropbox.com/scl/fi/9vdixdqdvjb7nolavcl1r/Demo-bulkmail.mp4?rlkey=2ems7qohs02o5uyy9z1kkimt4&st=so9ls7gb&dl=0)
 
 
 ##  Features
