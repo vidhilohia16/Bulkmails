@@ -3,8 +3,8 @@
 A full-stack web application to send personalized bulk emails 
 to 500+ contacts using Gmail API with Google OAuth2 authentication.
 
-🔗 Live: https://bulkmails-five.vercel.app
-🎥 Demo: [Watch here](https://www.dropbox.com/scl/fi/z5gywv20bliq3dsbycj1f/Bulkmails-Full-Stack-Web-Application.mp4?rlkey=c4y3y6fcrqi1pd1l9tyrm21o6&st=2irrd3bp&dl=0)
+ Live: https://bulkmails-five.vercel.app
+ Demo: [Watch here](https://www.dropbox.com/scl/fi/z5gywv20bliq3dsbycj1f/Bulkmails-Full-Stack-Web-Application.mp4?rlkey=c4y3y6fcrqi1pd1l9tyrm21o6&st=2irrd3bp&dl=0)
 
 
 ##  Features
@@ -23,29 +23,9 @@ to 500+ contacts using Gmail API with Google OAuth2 authentication.
 |      Frontend        |      Backend      | Tools |
 
 | React, MUI, Bootstrap | Node.js, Express | Gmail API |
-| Vercel (deployed) | Render (deployed) | Redis (Upstash) |
+| Vercel (deployed)    | Render (deployed) | Redis (Upstash) |
 
 
-### Installation
 
-## Clone the repo
-git clone https://github.com/vidhilohia16/Bulkmails
-
-## Install backend dependencies (root folder)
-npm install
-
-## Install frontend dependencies
-cd vite-project
-npm install
-
-### Run Locally
-## Backend (from root)
-node index.js
-
-## Frontend (from vite-project folder)
-cd vite-project
-npm run dev
-
-## 👩‍💻 Author
 Vidhi Lohia
 [LinkedIn](https://www.linkedin.com/in/vidhi-lohia1/) | [GitHub](https://github.com/vidhilohia16)
