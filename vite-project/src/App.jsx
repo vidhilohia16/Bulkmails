@@ -286,7 +286,7 @@ if (response.status === 400) {
     textTransform: "none",
     '&:hover': { background: "#141415" }
   }}>
-    {isloading?<><CircularProgress size={20} sx={{ color: "#facc15 ", mr: 1 }} /> <Typography>Sending emails…</Typography></>:<><RocketLaunchIcon sx={{mr:1}}></RocketLaunchIcon><Typography sx={{fontSize:"20px",fontWeight: 500,}}>Blast emails</Typography></>}
+    {isloading?<><CircularProgress size={20} sx={{ color: "#facc15 ", mr: 1 }} /> <Typography>Sending emails…</Typography></>:<><RocketLaunchIcon sx={{mr:1}}></RocketLaunchIcon><Typography sx={{fontSize:"20px",fontWeight: 500,}}>Bulk emails</Typography></>}
   </Button>
    {isloading && (
     <Box sx={{

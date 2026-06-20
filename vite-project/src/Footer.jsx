@@ -14,7 +14,7 @@ export default function Footer() {
         {/* Logo */}
         <Box>
           <Typography sx={{ color: "white", fontWeight: 500, fontSize: "16px", mb: 1 }}>
-            <ForwardToInboxOutlinedIcon sx={{color:"#facc15 "}}></ForwardToInboxOutlinedIcon> blastmail
+            <ForwardToInboxOutlinedIcon sx={{color:"#facc15 "}}></ForwardToInboxOutlinedIcon> bulkmail
           </Typography>
           <Typography sx={{ color: "#eceae2", fontSize: "13px" }}>
             Bulk email, simplified.
@@ -45,7 +45,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <Box sx={{ borderTop: "1px solid #e6e9ed", width:"100%",mt: 4, pt: 2, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
-        <Typography sx={{ color: "white", fontSize: "12px" }}>© 2026 blastmail. All rights reserved.</Typography>
+        <Typography sx={{ color: "white", fontSize: "12px" }}>© 2026 bulkmail. All rights reserved.</Typography>
         <Typography sx={{ color: "white", fontSize: "12px" }}>Made with ♥ by Vidhi</Typography>
       </Box>
     </Box>
