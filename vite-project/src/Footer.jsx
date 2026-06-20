@@ -38,7 +38,7 @@ export default function Footer() {
           <Typography sx={{ color: "white", fontSize: "11px", mb: 1.5, letterSpacing: "0.08em" }}>
             LEGAL
           </Typography>
-          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#facc15"}}></ShieldOutlinedIcon><Link href="https:bulkmails-five.vercel.app/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "white", fontSize: "13px", }}>Privacy policy</Link></Box>
+          <Box sx={{display:"flex"}}><ShieldOutlinedIcon fontSize="small" sx={{color:"#facc15"}}></ShieldOutlinedIcon><Link href="/privacy-policy.html" sx={{ textDecoration:"none",display: "block", color: "white", fontSize: "13px", }}>Privacy policy</Link></Box>
         </Box>
 
       </Box>
